@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link do BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Link da pasta CSS-->
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="user.png">
+    <title>Tela de Login</title>
+    </head>
+    <body>
+            <div class="form-body">
+            <div class="row">
+            <div class="form-holder">
+            <div class="form-content">
+            <div class="form-items">
+
+            <h3>Cadastre-se</h3>
+
+            <p><strong>Preencha os dados abaixo.</strong></p>
+
+            <form class="requires-validation" novalidate>
+            <div class="col-md-12">
+                   
+            <input class="form-control" type="text" name="nome" placeholder="Nome completo" required>
+                  
+            <div class="valid-feedback">O campo de nome de usuário é válido!
+            </div>
+                   
+            <div class="invalid-feedback">O campo de nome de usuário é inválido!
+            </div>
+            
+        </div>
+
+        <div class="col-md-12">
+           
+            <input class="form-control" type="email" name="email" placeholder="Endereço de email" required>
+
+            <div class="valid-feedback">O campo e-mail é válido!
+            </div>
+
+            <div class="invalid-feedback">O campo e-mail é inválido!
+            </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <select class="form-select mt-3" required>
+                <option selected disabled value="">Posição</option>
+                <option value="jweb">Desenvolvedor Web Júnior</option>
+                <option value="sweb">Desenvolvedor Web Sênior</option>
+                <option value="fweb">Desenvolvedor Full Stack</option>
+                <option value="pmanager">Gestor de projeto</option>
+               </select>
+            
+               <div class="valid-feedback">Você selecionou uma posição!
+               </div>
+
+               <div class="invalid-feedback">Você não selecionou uma posição! Por favor, selecione uma posição!
+               </div>
+            
+            </div>
+
+            <div class="col-md-12">
+                
+                <input class="form-control" type="password" name="password" placeholder="Senha" required>
+
+                <div class="valid-feedback">O campo de senha é válido!
+                </div>
+
+                <div class="invalid-feedback">O campo de senha não pode ficar em branco!
+                </div>
+
+            </div>
+
+            <div class="col-md-12 mt-3">
+
+            <label class="mb-3 mr-1" for="gender">Gênero: 
+            </label>
+
+            <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+
+            <label class="btn btn-sm btn-outline-primary" for="male">Masculino
+            </label>
+
+            <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+
+            <label class="btn btn-sm btn-outline-danger" for="female">Feminino
+            </label>
+
+            <input type="radio" class="btn-check" name="gender" id="other" autocomplete="off" required>
+            <label class="btn btn-sm btn-outline-secondary" for="other">Outro</label>
+
+            <div class="valid-feedback mv-up">Você selecionou um gênero!
+            </div>
+
+            <div class="invalid-feedback mv-up">Você não selecionou um gênero! Por favor, selecione um gênero!
+            </div>
+
+            </div>
+
+            <div class="form-check">
+                
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+
+                <label class="form-check-label">Confirmo que todos os dados estão corretos.
+                </label>
+
+                <div class="invalid-feedback">Por favor confirme se os dados inseridos estão todos corretos!
+                </div>
+
+            </div>
+
+            <div class="form-button mt-3">
+                <button id="submit" type="submit" class="btn btn-success">Registrar</button>
+           
+            </div>
+
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--Pasta do JavaScript-->
+    <script src="moviment.js">
+    </script>
+
+</body>
+</html>
