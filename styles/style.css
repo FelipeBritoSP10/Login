@@ -1,4 +1,4 @@
-            /*Estilização*/
+            /* Estilização */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
@@ -147,7 +147,7 @@ html, body {
    color: #2acc80;
 }
 
-/*Responsividade*/
+/* Responsividade */
 @media screen and (max-width: 768px){}
     .form-content .form-items {
         min-width: 100%; 
